@@ -56,6 +56,14 @@
   .field {
     @apply w-full border-0 border-b border-ink/20 bg-transparent px-0 py-4 text-base text-ink outline-none transition placeholder:text-ink/35 focus:border-coral focus:ring-0;
   }
+
+  .quiz-option {
+    @apply flex min-h-14 items-center border border-white/15 bg-white/5 px-4 py-3 text-sm font-semibold text-white/80 outline-none transition hover:border-coral hover:bg-coral/10 hover:text-white focus:border-coral focus:ring-2 focus:ring-coral/50;
+  }
+
+  .quiz-option.is-selected {
+    @apply border-coral bg-coral text-white;
+  }
 }
 
 .hero-grid {

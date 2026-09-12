@@ -1,6 +1,6 @@
 # Лендинг репетитора по математике
 
-Одностраничный адаптивный лендинг на чистом HTML, Tailwind CSS и минимальном JavaScript.
+Одностраничный адаптивный лендинг на чистом HTML, Tailwind CSS и минимальном JavaScript для учеников 5—8 класса.
 
 Демо: https://ya-yura.github.io/math-tutor-landing-20260912/
 
@@ -18,7 +18,7 @@ npm run start
 
 - `src/index.html` — семантическая разметка и тексты лендинга.
 - `src/input.css` — Tailwind CSS и небольшие брендовые стили.
-- `src/script.js` — мобильное меню и отправка формы в Telegram Share с готовым текстом.
+- `src/script.js` — мобильное меню и 4-шаговый квиз с отправкой квалифицированной заявки в Telegram Share.
 - `public/portrait.png` — предоставленный заказчиком портрет.
 - `dist/` — production-сборка, создаётся командой `npm run build`.
 
