@@ -1,0 +1,13 @@
+{
+  "name": "math-tutor-landing-20260912",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Одностраничный лендинг частного репетитора по математике",
+  "scripts": {
+    "build": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\" && tailwindcss -i ./src/input.css -o ./dist/styles.css --minify && node -e \"const fs=require('fs'); fs.copyFileSync('src/index.html','dist/index.html'); fs.copyFileSync('src/script.js','dist/script.js'); fs.cpSync('public','dist/public',{recursive:true}); fs.writeFileSync('dist/.nojekyll','')\"",
+    "start": "python -m http.server 4173 --directory dist"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
