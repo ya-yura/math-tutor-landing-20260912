@@ -2,6 +2,8 @@
 
 Одностраничный адаптивный лендинг на чистом HTML, Tailwind CSS и минимальном JavaScript.
 
+Демо: https://ya-yura.github.io/math-tutor-landing-20260912/
+
 ## Локальный запуск
 
 ```bash
