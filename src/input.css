@@ -53,6 +53,10 @@
     @apply inline-flex items-center gap-3 border-b border-ink/20 pb-1 text-sm font-semibold transition hover:border-ink hover:text-coral focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-4 focus:ring-offset-paper;
   }
 
+  .outline-link-light {
+    @apply border-white/25 text-white hover:border-white focus:ring-offset-ink;
+  }
+
   .field {
     @apply w-full border-0 border-b border-ink/20 bg-transparent px-0 py-4 text-base text-ink outline-none transition placeholder:text-ink/35 focus:border-coral focus:ring-0;
   }
@@ -64,12 +68,52 @@
   .quiz-option.is-selected {
     @apply border-coral bg-coral text-white;
   }
+
+  .quiz-shell {
+    @apply relative overflow-hidden border border-white/10 bg-ink p-6 text-white shadow-soft sm:p-9;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  .quiz-shell-top {
+    @apply mb-6 flex items-center justify-between border-b border-white/10 pb-4;
+  }
+
+  .quiz-code {
+    @apply font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-coral;
+  }
 }
 
 .hero-grid {
-  background-image: linear-gradient(rgba(10, 24, 48, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(10, 24, 48, 0.04) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(232, 121, 97, 0.28) 0%, rgba(232, 121, 97, 0) 68%);
+}
+
+.hero-code {
+  color: rgba(255, 255, 255, 0.45);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.8;
+  text-transform: uppercase;
+  transform: rotate(90deg) translateX(100%);
+  transform-origin: right top;
+}
+
+.hero-code span {
+  color: #e87961;
+}
+
+.tech-grid {
+  background-image: linear-gradient(rgba(10, 24, 48, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(10, 24, 48, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black 35%, transparent 100%);
 }
 
 .portrait-frame {
@@ -90,7 +134,7 @@
   position: absolute;
   right: -0.65rem;
   top: 1.25rem;
-  color: rgba(10, 24, 48, 0.55);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.2em;
