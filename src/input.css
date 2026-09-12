@@ -130,7 +130,7 @@
 }
 
 .portrait-frame::after {
-  content: 'math / 01';
+  content: 'мат / 01';
   position: absolute;
   right: -0.65rem;
   top: 1.25rem;

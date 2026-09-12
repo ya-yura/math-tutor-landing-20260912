@@ -76,7 +76,8 @@ if (quiz) {
       `Имя: ${name}.`,
       `Контакт: ${contact}.`
     ].join(' ');
-    const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(message)}`;
+    const telegramUrl = `https://t.me/PythonDVP?text=${encodeURIComponent(message)}`;
+    navigator.clipboard?.writeText(message).catch(() => {});
     window.open(telegramUrl, '_blank', 'noopener,noreferrer');
     flow.classList.add('hidden');
     success.classList.remove('hidden');

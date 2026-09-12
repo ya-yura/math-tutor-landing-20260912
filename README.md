@@ -18,7 +18,7 @@ npm run start
 
 - `src/index.html` — семантическая разметка и тексты лендинга.
 - `src/input.css` — Tailwind CSS и небольшие брендовые стили.
-- `src/script.js` — мобильное меню и 3-шаговый квиз с отправкой квалифицированной заявки в Telegram Share.
+- `src/script.js` — мобильное меню и 3-шаговый квиз с открытием чата @PythonDVP и готовым текстом заявки.
 - `public/portrait.png` — предоставленный заказчиком портрет.
 - `dist/` — production-сборка, создаётся командой `npm run build`.
 
